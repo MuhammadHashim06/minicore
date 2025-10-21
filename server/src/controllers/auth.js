@@ -21,7 +21,7 @@ async function login(req, res) {
   const ok = await argon2.verify(user.passwordHash, password || "");
   if (!ok) return res.status(401).json({ error: "Invalid credentials" });
   const token = jwt.sign({ id: user._id, grade: user.grade }, process.env.JWT_SECRET, { expiresIn: "7d" });
-  res.cookie(process.env.COOKIE_NAME, token, { httpOnly: true, sameSite: "lax", secure: false, maxAge: 7*24*3600*1000 });
+  res.cookie(process.env.COOKIE_NAME, token, { httpOnly: true, sameSite: "lax", secure: true, maxAge: 7*24*3600*1000 });
   res.json({ id: user._id, email: user.email, grade: user.grade, xp: user.xp, level: user.level, badges: user.badges });
 }
 
