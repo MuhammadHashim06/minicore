@@ -1,0 +1,87 @@
+{
+  "subjects": [
+    {
+      "title": "Math",
+      "slug": "math",
+      "grade": "G5",
+      "order": 1,
+      "chapters": [
+        {
+          "title": "Math Chapter 1",
+          "slug": "math-ch-1",
+          "videoUrl": "",
+          "pages": [
+            {
+              "idx": 0,
+              "title": "Page 1",
+              "content": {
+                "type": "doc",
+                "blocks": [
+                  {
+                    "kind": "heading",
+                    "text": "Math Ch 1 — Page 1"
+                  },
+                  {
+                    "kind": "paragraph",
+                    "text": "This is JSON content. Render on client as rich text."
+                  },
+                  {
+                    "kind": "bullet_list",
+                    "items": ["Point A", "Point B", "Point C"]
+                  }
+                ]
+              },
+              "estSeconds": 60
+            },
+            {
+              "idx": 1,
+              "title": "Page 2",
+              "content": {
+                "type": "doc",
+                "blocks": [
+                  {
+                    "kind": "heading",
+                    "text": "Math Ch 1 — Page 2"
+                  },
+                  {
+                    "kind": "paragraph",
+                    "text": "This is JSON content. Render on client as rich text."
+                  },
+                  {
+                    "kind": "bullet_list",
+                    "items": ["Point D", "Point E", "Point F"]
+                  }
+                ]
+              },
+              "estSeconds": 60
+            }
+          ],
+          "order": 1,
+          "isActive": true,
+          "questions": [
+            {
+              "stem": "(Math Ch 1) Sample question 1?",
+              "options": [
+                { "key": "A", "text": "Option A" },
+                { "key": "B", "text": "Option B" },
+                { "key": "C", "text": "Option C" },
+                { "key": "D", "text": "Option D" }
+              ],
+              "answerKey": "A"
+            },
+            {
+              "stem": "(Math Ch 1) Sample question 2?",
+              "options": [
+                { "key": "A", "text": "Option A" },
+                { "key": "B", "text": "Option B" },
+                { "key": "C", "text": "Option C" },
+                { "key": "D", "text": "Option D" }
+              ],
+              "answerKey": "B"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

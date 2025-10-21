@@ -1,0 +1,10 @@
+const { Router } = require("express");
+const { register, login, me, logout } = require("../controllers/auth");
+const { auth } = require("../middleware/auth");
+const r = Router();
+const guard = auth(process.env.JWT_SECRET, process.env.COOKIE_NAME);
+r.post("/register", register);
+r.post("/login", login);
+r.post("/logout", logout);
+r.get("/me", guard, me);
+module.exports = r;

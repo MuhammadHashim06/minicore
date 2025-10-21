@@ -1,0 +1,17 @@
+:root { font-family: Inter, system-ui, sans-serif; }
+body { margin: 0; background: #0d0e10; color: #fff; }
+.nav { display:flex; gap:16px; padding:12px 16px; border-bottom: 1px solid #282c31; }
+a { color:#66d0ff; text-decoration:none; }
+.wrap { max-width: 920px; margin: 24px auto; padding: 0 16px; }
+.grid { display:grid; grid-template-columns: repeat(auto-fill,minmax(220px,1fr)); gap:12px; }
+.tile, .card, .qcard { background:#282c31; border-radius: 12px; padding:16px; }
+.btn { background:#ff6600; color:#fff; border:0; padding:8px 12px; border-radius:8px; cursor:pointer; }
+.btn.small { padding:4px 8px; font-size:12px; margin-left:8px; }
+.btn.primary { background:#00aeef; }
+input, select { width:100%; margin:8px 0; padding:8px; border-radius:8px; border:1px solid #444; background:#1a1c20; color:#fff; }
+.err { color:#ff9966; }
+.placeholder { background:#1a1c20; border:1px dashed #444; padding:24px; border-radius:12px; margin:12px 0; text-align:center; }
+.opt { display:block; padding:8px; border:1px solid #444; border-radius:8px; margin:8px 0; }
+.opt.picked { border-color:#00aeef; }
+.row { display:flex; gap:8px; justify-content:space-between; margin-top:12px; }
+.list li { margin:8px 0; }
