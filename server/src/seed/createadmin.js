@@ -13,6 +13,7 @@ async function createAdmin() {
 
     // If no admin exists, create one using the register function
     const adminData = {
+      name: "Admin User",
       email: "admin@example.com",
       password: "adminpassword",  // Use a strong password here, but we will hash it using argon2
       grade: "G6",  // Assign appropriate grade

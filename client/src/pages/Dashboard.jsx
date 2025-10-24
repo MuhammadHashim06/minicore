@@ -194,7 +194,7 @@ export default function Dashboard() {
         {continueChapter && <Link className="btn primary" to={`/chapters/${continueChapter.chapterSlug}`}>Resume Chapter</Link>}
         <Link className="btn" to="/profile">Profile</Link>
       </div>
-      <h2>Welcome 👋 {me ? <small style={{ opacity: 0.8, fontWeight: 400 }}>({me.email})</small> : null}</h2>
+      <h2>Welcome 👋 {me ? <small style={{ opacity: 0.8, fontWeight: 400 }}>({me.name})</small> : null}</h2>
 
       {/* Top summary row */}
       <div className="grid">

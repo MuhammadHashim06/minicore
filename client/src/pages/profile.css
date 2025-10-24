@@ -1,0 +1,6 @@
+/* (optional) make card headings behave nicely */
+.tile h3 {
+  margin: 0 0 8px;
+  line-height: 1.25;
+  word-break: break-word; /* safe fallback */
+}

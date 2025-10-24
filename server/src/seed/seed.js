@@ -79,11 +79,11 @@ const Question = require("../models/Question");
 
     const grade = "G6";
     const subjects = [
-      { title: "Math", slug: "math", grade, order: 1 },
-      { title: "Science", slug: "science", grade, order: 2 },
-      { title: "English", slug: "english", grade, order: 3 },
-      { title: "Computer", slug: "computer", grade, order: 4 },
-      { title: "GK", slug: "gk", grade, order: 5 }
+      { title: "Math", slug: "math6", grade, order: 1 },
+      { title: "Science", slug: "science6", grade, order: 2 },
+      { title: "English", slug: "english6", grade, order: 3 },
+      { title: "Computer", slug: "computer6", grade, order: 4 },
+      { title: "GK", slug: "gk6", grade, order: 5 }
     ];
 
     console.log("📚 Inserting subjects...");

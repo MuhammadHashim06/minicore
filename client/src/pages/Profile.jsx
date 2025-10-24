@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import { api } from "../lib/api";
+import "./profile.css";
 
 export default function Profile(){
   const [me,setMe]=useState(null);
@@ -24,7 +25,7 @@ export default function Profile(){
       <h2>Profile</h2>
       <div className="grid">
         <div className="tile">
-          <h3>{me.email}</h3>
+<h3 className="ellipsis" title={me.name}>{me.name}</h3>
           <p>Grade: <b>{me.grade}</b></p>
           <p>XP: <b>{me.xp}</b> • Level: <b>{me.level}</b></p>
           <p>Badges: {me.badges?.length ? me.badges.join(", ") : "—"}</p>
