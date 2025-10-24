@@ -41,7 +41,7 @@ export default function Profile(){
       <h3 style={{marginTop:24}}>By Subject</h3>
       <div className="grid">
         {subsProg.map(s => (
-          <div key={s.subjectId} className="tile">
+          <div key={s.subjectId} className="tile" style={{display:"block"}}>
             <div style={{display:"flex", justifyContent:"space-between"}}>
               <b>{s.subjectTitle}</b><span>{s.percent}%</span>
             </div>
