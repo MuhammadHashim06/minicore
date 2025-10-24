@@ -10,7 +10,7 @@ export default function Register() {
     try{ const r=await api.post("/auth/register",{email,password,grade,name}); setUser(r.data); nav("/"); }
     catch(e){ setErr(e?.response?.data?.error||"Failed"); }
   };
-  return <div className="card">
+  return( <div className="auth" style={{display:"grid",placeItems:"center", height:"100%",padding:"5%"}}> <div className="card">
     <h2>Create account</h2>
     <form onSubmit={submit}>
       <input placeholder="Name" value={name} onChange={e=>setName(e.target.value)}/>
@@ -23,5 +23,5 @@ export default function Register() {
       <button className="btn">Register</button>
     </form>
     <p>Already have an account? <Link to="/login">Login</Link></p>
-  </div>;
+  </div></div>);
 }
